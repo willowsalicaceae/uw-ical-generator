@@ -72,7 +72,7 @@ let schedule;
       }
     });
     const { error, value } = ics.createEvents(result);
-    let blob = new Blob([value], {type: "text/html"});
+    let blob = new Blob([value], {type: "text/calendar"});
     var link = document.createElement("a");
     link.download = "schedule.ics";
     link.href = URL.createObjectURL(blob);
