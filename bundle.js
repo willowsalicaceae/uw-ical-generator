@@ -37,6 +37,7 @@ let schedule;
     let result = [];
     scheduleJSON.periods.map((period) => {
       switch (period.id) {
+        case 0:
         case 1:
           period.sections.map((section) => {
             section.meetings.map((meeting) => {
